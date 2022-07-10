@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    animation-duration: 0.7s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: in;
+}
+
+@keyframes in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    height: 8vh;
+}
+
+header {
+    width: 80%;
+}
+
+nav {
+    width: 80%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.logo {
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    margin: 0px 0px 0px 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+.nav-list li {
+    margin: 4px 0px 0px 0px ;
+    letter-spacing: 3px;
+    margin-left: 32px;
+    cursor: pointer;
+    color: #000;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 999px) {
+
+    nav {
+        justify-content: space-around;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 30vw;
+        height: 92vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .nav-list li a {
+        color: #000;
+    }
+}
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.principal {
+    height: 92vh;
+    width: 98vw;
+}
+
+.principal .left {
+    float: left;
+    height: 92vh;
+    width: 48vw;
+}
+
+.principal .right {
+    float: right;
+    height: 92vh;
+    width: 48vw;
+}
+
+.principal .left h1 {
+    font-size: 70px;
+    margin: 15% 0% 0% 10%;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+}
+
+.principal .left p {
+    font-size: 25px;
+    margin: 3% 0% 0% 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.principal .left button {
+    display: flex;
+    height: 9%;
+    font-size: 20px;
+    margin: 3% 0% 0% 10%;
+    padding: 1.5% 5% 0% 5%;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #e2efff;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.principal .left button:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.image-principal {
+    margin: 3% 0% 0% 10%;
+}
+
+.subprincipal {
+    height: 70vh;
+    width: 100vw;
+}
+
+.informactions {
+    padding: 40px 0px 0px 250px;
+    font-size: 17px;
+    display: flex;
+    background-color: #859fc2;
+    height: 30vh;
+    width: 95vw;
+    margin: 0px 0px 0px 25px;
+    box-shadow: 5px 5px 40px #859fc2;
+    gap: 150px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.informactions h1, h2 {
+    padding: 10px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.informactions h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    margin: 0px 0px 0px 45px;
+    height: 1000px;
+    width: 95vw;
+}
+
+.title-gallery {
+    margin: 0px 0px 50px 500px;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    font-size: 100px;
+    color: #859fc2;
+}
+
+.footer {
+    background-color: #859fc2;
+    height: 10vh;
+    width: 100vw;
+}
+
+.title-footer {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px -800px;
+    color: #FFF;
+}
+
+.images-footer {
+    margin: -30px 0px 0px 900px;
+}
+
+.images-footer img {
+    padding: 0px 0px 0px 20px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.images-footer img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
